@@ -1,7 +1,7 @@
 # Tech Stack
 
 UNCFoodWatch is a NEXT.JS APP that uses:
-
+- dependency: version
 1. firebase: 8.10.1
 2. next: 12.1.5
 3. react: 18.0.0
