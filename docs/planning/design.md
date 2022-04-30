@@ -49,4 +49,4 @@ Food Poisoning is an issue, which over 48 million Americans experience each year
 
 ## Raw Images
 
-![My animated logo](docs/images/start-figma.jpg)
+![start-figma](https://user-images.githubusercontent.com/69479656/166119494-23a85ac8-0a04-4a7e-88b8-35ab5b574219.JPG)
