@@ -46,3 +46,7 @@ Food Poisoning is an issue, which over 48 million Americans experience each year
 ## Mobile verison
 
 [Mobile Version] (https://www.figma.com/file/UWiZ2QbjgqgcMq6tLoW815/FoodWatch---Mobile-Application-Prototype?node-id=0%3A1)
+
+## Raw Images
+
+![My animated logo](docs/images/start-figma.jpg)
