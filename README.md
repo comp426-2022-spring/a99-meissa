@@ -43,7 +43,7 @@ Follow the following steps to install UNCFoodWatch
 3. Run ``` npm i -S firebase@^8 ```
 4. Run ``` npm run dev ```
 
-## Teck Stack
+## Teck Stack (Dependencies, API, etc.)
 
 Follow this [Link](https://github.com/comp426-2022-spring/a99-meissa/blob/main/docs/tech-stack.md) to access the project tech stack
 
