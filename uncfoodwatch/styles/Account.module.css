@@ -1,0 +1,77 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: #7BAFD4;
+  }
+
+  .html {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  
+
+  .page-one, .page-two, .page-three, .page-four {padding-top:2em;}
+
+  .titleNav {
+    display: flex;
+    justify-content: flex-start;
+    order: -1;
+  }
+
+  .mainnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #EFD6C1;
+    color: rgb(0, 0, 0);
+    line-height:4em;
+    padding:0 1em;
+  }
+
+  .navItem {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .center {
+    margin: auto;
+    width: 50%;
+    /*border: 3px solid green;*/
+    padding: 10px;
+  }
+
+  .logBox {
+      padding: 10px;
+      width: 100%;
+  }
+
+  .input {
+    margin: auto;
+    width: 50%;
+    /*border: 3px solid green;*/
+    padding: 10px;
+  }
+
+  .Email {
+      width: 100%;
+  }
+
+  .button {
+      width: 100%;
+      padding: 10px;
+      
+  }
+
+  .text {
+      font-size: 20px;
+  }

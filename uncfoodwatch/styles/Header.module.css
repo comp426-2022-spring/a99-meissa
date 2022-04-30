@@ -1,0 +1,97 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    color: #7BAFD4;
+    background-color: #7BAFD4;
+  }
+  
+  .html {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #7BAFD4;
+  }
+  
+  .top {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  
+  .leftHalf {
+    display: flex;
+    background-color: #DDFFFE;
+    padding: 1rem;
+    max-width: 10em;
+    flex-direction: column;
+    justify-content: flex;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .tab {
+    margin: 0;
+    padding: 0;
+    left: 0px;
+    width: -webkit-fill-available;
+    text-align: center;
+    padding-bottom: 1em;
+  }
+  
+  .aside {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .button {
+    background-color: orange;
+    padding: 0%;
+    border-radius: 10px;
+    width: 7em;
+    height: 3em;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .main {
+    display: flex;
+    background-color: #7BAFD4;
+    padding: 1rem;
+    flex:1;
+  }
+  
+  .page-one, .page-two, .page-three, .page-four {padding-top:2em;}
+  
+  .titleNav {
+    display: flex;
+    justify-content: flex-start;
+    order: -1;
+  }
+  
+  .mainnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #7BAFD4;
+    color: #7BAFD4;
+    line-height:4em;
+    padding:0 1em;
+  }
+  
+  .navItem {
+    display: flex;
+    justify-content: flex-end;
+    color: #7BAFD4;
+    background-color: #7BAFD4;
+  }
+
+  .innerNav {
+    background-color: black;
+    color: pink;
+  }
+  
