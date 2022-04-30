@@ -31,6 +31,14 @@ It is a Fact of Life, Food Poisoning Happens, so Document It to Protect Others. 
 
 - This GitHub repository contains a Next.js App. The package takes the form of a React App. To use, one must first install the dependences. The following command will run the website: 
 
+## Install dependencies in package
+
+`npm install` - install dependencies for this package
+
+## Dependencies
+
+-- PUT DEPENDENCIES NEEDED FOR RUNNING --
+
 ```
 npm run dev
 ```
