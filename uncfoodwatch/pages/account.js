@@ -1,3 +1,5 @@
+// Set Up Account Page
+
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/AccountMain.module.css'
@@ -18,13 +20,15 @@ const AccountPage = () => {
 
     const { deleteUser } = useAuth();
 
+  // Update Info for deleting user
   const onSubmit = () => {
         deleteUser()
         console.log("Success. The user is deleted in firebase")
         alert("Your account has been deleted")
       setView(1)
   };
-
+  
+  // Update User
   const { updateUser } = useAuth();
   const forUser = () => {
       updateUser(password)
@@ -33,7 +37,7 @@ const AccountPage = () => {
     setView(0)
   }
 
-
+    // HTML for Page
     return (
         <div className={styles.html}>
             <Head>
@@ -77,4 +81,5 @@ const AccountPage = () => {
     )
 }
 
+// Export Page
 export default AccountPage

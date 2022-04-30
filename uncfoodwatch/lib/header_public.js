@@ -1,3 +1,4 @@
+// Public Header for non-logged in users
 import styles from '../styles/Header.module.css'
 import Link from 'next/link'
 

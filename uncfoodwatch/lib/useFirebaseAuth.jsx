@@ -1,12 +1,15 @@
+// Firebase Auth Functionality
 import { useState, useEffect } from 'react'
 import firebase from './firebase';
 import { useAuth } from '../context/AuthUserContext';
 
+// Format User
 const formatAuthUser = (user) => ({
   uid: user.uid,
   email: user.email
 });
 
+// Add User Auth
 export default function useFirebaseAuth() {
   const [authUser, setAuthUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -34,8 +37,7 @@ export default function useFirebaseAuth() {
   };
 
 
-  // Added from Grouper to update email
-
+  // Add Info to Firebase
   const signInWithEmailAndPassword = (email, password) =>
     firebase.auth().signInWithEmailAndPassword(email, password);
 

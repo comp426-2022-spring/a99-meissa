@@ -1,3 +1,4 @@
+// Home Page
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -9,6 +10,9 @@ import Header_Public from '../lib/header_public'
 
 
 export default function Home() {
+
+  // As we move from prototype to user ready app, we would work more on routes 
+  
   // const router = useRouter()
 
   // const handleClick = (e, path) => {

@@ -1,3 +1,4 @@
+// Set up Log-In Page
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { useAuth } from '../context/AuthUserContext';
@@ -8,6 +9,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header_Public from '../lib/header_public'
 
+// Log In Functions
 const LogIn = () => {
   const [email, setEmail] = useState("");
   const [passwordOne, setPasswordOne] = useState("");
@@ -21,6 +23,7 @@ const LogIn = () => {
   const remainder = authUser || loading;
   const { signInWithEmailAndPassword } = useAuth();
 
+  // Check Passwords
   const onSubmit = event => {
     setError(null)
     //check if passwords match. If they do, create user in Firebase
@@ -39,6 +42,7 @@ const LogIn = () => {
     event.preventDefault();
   };
 
+  // HTML for Page
   return (
     <div className={styles.html}>
             <Head>
@@ -90,19 +94,8 @@ const LogIn = () => {
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-    
   )
 }
 
+// Export Page
 export default LogIn;

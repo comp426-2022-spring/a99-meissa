@@ -1,3 +1,4 @@
+// Import styles, auth, reatstrap, router, and email update
 import styles from '../styles/Account.module.css'
 import { useAuth } from '../context/AuthUserContext';
 import {Container, Row, Col, Button, Form, FormGroup, Label, Input, Alert} from 'reactstrap';
@@ -5,6 +6,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import  { updateEmail } from './useFirebaseDatabase.js'
 
+// This is Edit Account Page
 const EditAccount = () => {
     const [passwordOne, setPasswordOne] = useState("");
     const router = useRouter();
@@ -14,6 +16,7 @@ const EditAccount = () => {
     const remainder = authUser || loading;
     const [email, setEmail] = useState(authUser? authUser.email : "");
 
+     // Rerouting if not logged in
      useEffect(() => {
         if (!loading && !authUser)
           router.push('/')

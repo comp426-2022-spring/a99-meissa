@@ -1,3 +1,4 @@
+// Private Header for logged in users
 import styles from '../styles/Header.module.css'
 import Link from 'next/link'
 import signOut from '../lib/useFirebaseAuth'

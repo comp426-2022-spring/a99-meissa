@@ -1,9 +1,11 @@
+// Set up Logged In View
 import styles from '../styles/Form.module.scss';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { useAuth } from '../context/AuthUserContext';
 import Header_Private from '../lib/header_private';
 import firebase from '../firebase/clientApp.js';
+// Using ReactQuill to hold Cases
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import 'firebase/firestore';
@@ -13,7 +15,7 @@ import { getDoc } from 'firebase/firestore';
 
 import {Container, Row, Col, Button, Head, Input} from 'reactstrap';
 
-
+// Logged In Functions
 const LoggedIn = () => {
   const { authUser, loading, signOut } = useAuth();
   const router = useRouter();
@@ -24,10 +26,13 @@ const LoggedIn = () => {
       router.push('/')
   }, [authUser, loading])
 
-  
+// Create Database and access notes
 const database = firebase.firestore();
+// Create notes collection
 const dbInstance = database.collection('notes');
+// Hide and show based on input
 const [isInputVisible, setInputVisible] = useState(false);
+// Note styles
 const [noteTitle, setNoteTitle] = useState('');
 const [noteDesc, setNoteDesc] = useState('')
 const inputToggle = () => {
@@ -56,6 +61,7 @@ const inputToggle = () => {
   
  const [notesArray, setNotesArray] = useState([]);
  
+ // Retreave Notes from Database
  const getNotes = () => {
   dbInstance.get()
       .then((data) => {
@@ -64,7 +70,7 @@ const inputToggle = () => {
           }));
       })
 }
-
+  // HTML For Page
   return (
 
     <div>
@@ -123,4 +129,5 @@ const inputToggle = () => {
   )
 }
 
+// Export Page
 export default LoggedIn;

@@ -1,3 +1,5 @@
+// Set up backend Database with Firebase
+// This adds info to Firebase
 import { useState, useEffect } from 'react'
 import firebase from '../firebase/clientApp';
 import { useAuth } from '../context/AuthUserContext';

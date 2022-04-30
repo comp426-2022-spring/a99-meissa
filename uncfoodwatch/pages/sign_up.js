@@ -1,8 +1,11 @@
+// Sign Up Page 
 import { useState } from 'react';
+// Set up routes
 import { useRouter } from 'next/router';
 import { useAuth } from '../context/AuthUserContext';
 import {Container, Row, Col, Button, Form, FormGroup, Label, Input, Alert} from 'reactstrap';
 
+// Create SignUp Page
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [passwordOne, setPasswordOne] = useState("");
@@ -12,7 +15,7 @@ const SignUp = () => {
   const [error, setError] = useState(null);
 
   const { createUserWithEmailAndPassword } = useAuth();
-
+  // Set up pw update
   const onSubmit = event => {
     setError(null)
     if(passwordOne === passwordTwo)
@@ -29,14 +32,16 @@ const SignUp = () => {
     event.preventDefault();
   };
 
+  // Go to Log In Page
   const goToLogin = () =>{
       router.push('log_in')
   }
-
+  // Go Home
   const goToHome = e =>{
       router.push('/')
   }
 
+  // HTML For Page
   return (
     <Container className="text-center" style={{ padding: '40px 0px'}}>
       <Row>
@@ -102,4 +107,5 @@ const SignUp = () => {
   )
 }
 
+// Export Page
 export default SignUp;
