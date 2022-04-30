@@ -39,7 +39,9 @@ npm run dev
 Follow the following steps to install UNCFoodWatch
 
 1. Clone the repository to your computer 
-2. Navigate to the repository
+2. Navigate to the file directory - UNCFOODWATCH
+3. Run ``` npm i -S firebase@^8 ```
+4. Run ``` npm run dev ```
 
 # Schedule
 
